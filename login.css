@@ -1,3 +1,4 @@
+/*controla el estilo del cuerpo de la pagina*/
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fff;
@@ -9,6 +10,7 @@ body {
     margin: 0;
 }
 
+/*container negro*/
 .login-container {
     background-color: #000;
     padding: 20px;
@@ -16,6 +18,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*contenier blanco*/
 .login-box {
     background-color: #fff;
     padding: 40px;
@@ -40,6 +43,7 @@ h2 {
     color: #333;
 }
 
+/*Contenido de Inicio de sesion*/
 input[type="email"],
 input[type="password"] {
     width: 90%;
@@ -62,6 +66,7 @@ input[type="password"]:focus {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
