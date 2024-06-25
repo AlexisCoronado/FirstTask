@@ -1,60 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: Arial, sans-serif; /* Font style for the page */
+    background-color: #ffffff; /* Background color of the page */
+    color: #000000; /* Text color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
+/* Container for the sign-up form */
 .signup-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    background-color: #ffffff; /* Background color of the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #000000; /* Black border around the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    width: 300px; /* Fixed width of the container */
+    text-align: center; /* Center text inside the container */
 }
 
+/* Heading styles */
 .signup-container h2 {
-    margin-bottom: 20px;
-    font-weight: normal;
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: normal; /* Normal font weight */
 }
 
+/* Styles for each input group (label and input) */
 .input-group {
-    margin-bottom: 15px;
-    text-align: left;
+    margin-bottom: 15px; /* Space below each input group */
+    text-align: left; /* Align text to the left */
 }
 
+/* Styles for labels */
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: normal;
+    display: block; /* Block display to make the label take up full width */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: normal; /* Normal font weight */
 }
 
+/* Styles for input fields */
 .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    background-color: #ffffff;
-    color: #000000;
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #000000; /* Black border around input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    background-color: #ffffff; /* Background color of input fields */
+    color: #000000; /* Text color of input fields */
 }
 
+/* Styles for the submit button */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #000000;
-    border: none;
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside the button */
+    background-color: #000000; /* Black background color for the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    color: #ffffff; /* White text color */
+    font-size: 16px; /* Font size for the button text */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Hover effect for the submit button */
 button:hover {
-    background-color: #333333;
+    background-color: #333333; /* Darker background color on hover */
 }
