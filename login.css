@@ -1,0 +1,90 @@
+/* Controla el estilo del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente para el texto del cuerpo */
+    background-color: #fff; /* Color de fondo blanco */
+    color: #333; /* Color del texto principal (gris oscuro) */
+    display: flex; /* Utiliza el modelo de caja flexible para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Altura del cuerpo de la página igual a la ventana gráfica */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Contenedor de login con fondo negro */
+.login-container {
+    background-color: #000; /* Color de fondo negro */
+    padding: 20px; /* Espaciado interno de 20px */
+    border-radius: 8px; /* Bordes redondeados de 8px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+}
+
+/* Contenedor blanco dentro del contenedor de login */
+.login-box {
+    background-color: #fff; /* Color de fondo blanco */
+    padding: 40px; /* Espaciado interno de 40px */
+    border-radius: 8px; /* Bordes redondeados de 8px */
+    text-align: center; /* Texto centrado */
+    max-width: 400px; /* Ancho máximo de 400px */
+}
+
+h2 {
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    color: #000; /* Color del texto negro */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.label {
+    display: block; /* Elimina el margen predeterminado */
+    margin-bottom: 8px; /* Margen inferior de 8px */
+    color: #333; /* Color del texto (gris oscuro) */
+}
+
+/* Estilo de los campos de entrada de correo electrónico y contraseña */
+input[type="email"],
+input[type="password"] {
+    width: 90%; /* Ancho del 90% del contenedor padre */
+    padding: 10px; /* Espaciado interno de 10px */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+}
+
+/* Estilo de los campos de entrada cuando están en foco */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #000; /* Cambia el color del borde a negro */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+.btn {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno (vertical: 10px, horizontal: 20px) */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.btn:hover {
+    background-color: #333; /* Color de fondo gris oscuro al pasar el cursor */
+}
+
+.register-link {
+    margin-top: 20px; /* Margen superior de 20px */
+    color: #000; /* Color del texto negro */
+}
+
+.register-link a {
+    color: #333; /* Color del enlace (gris oscuro) */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el cursor */
+}
