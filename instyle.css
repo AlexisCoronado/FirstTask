@@ -1,264 +1,289 @@
 /* Reset and base styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #333333;
-  }
-  .logo {
-    color: #333333;
-    margin-left: 3rem;
-    display: inline-block; /* Mostrar como bloque en línea */
-  }
-  .nav-link {
-    color: #333333;
-    display: inline-block; /* Mostrar como bloque en línea */
-  }
-  .nav-link img {
-    width: 2rem;
-    margin-left: 73rem;
-    display: inline-block; /* Mostrar como bloque en línea */
-    cursor: pointer;
-  }
-  
-  .button {
-    display: inline-block;
-    background-color: #333333;
-    color: #f3f4f6;
-    width: 7rem;
-    height: 3rem;
-    text-align: center;
-    line-height: 3rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  /* Utility classes */
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .flex-col {
-    flex-direction: column;
-  }
-  
-  .items-center {
-    align-items: center;
-  }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .min-h-screen {
-    min-height: 100vh;
-  }
-  
-  .py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-  
-  .bg-gray-100 {
-    background-color: #f3f4f6;
-  }
-  
-  .dark\:bg-gray-950 {
-    background-color: whitesmoke;
-  }
-  
-  .text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-  
-  .font-bold {
-    font-weight: 700;
-  }
-  
-  .tracking-tight {
-    letter-spacing: -0.025em;
-  }
-  
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-  
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-  
-  .text-gray-500 {
-    color: #6b7280;
-  }
-  
-  .dark\:text-gray-400 {
-    color: #9ca3af;
-  }
-  
-  .text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-  
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  
-  .grid {
-    display: grid;
-  }
-  
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  
-  .gap-8 {
-    gap: 2rem;
-  }
-  
-  .space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    margin-top: 1rem;
-  }
-  
-  .text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  
-  .w-full {
-    width: 100%;
-  }
-  
-  .h-64 {
-    height: 16rem;
-  }
-  
-  .object-cover {
-    object-fit: cover;
-  }
-  
-  .rounded-lg {
-    border-radius: 0.5rem;
-  }
-  
-  .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
-  
-  .overflow-hidden {
-    overflow: hidden;
-  }
-  
-  .p-4 {
-    padding: 1rem;
-  }
-  
-  .text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-  
-  .font-semibold {
-    font-weight: 600;
-  }
-  
-  .text-gray-500 {
-    color: #6b7280;
-  }
-  
-  .dark\:text-gray-400 {
-    color: #9ca3af;
-  }
-  
-  .text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-  
-  .products-space {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de ancho igual */
-    grid-template-rows: repeat(2, 1fr); /* Dos filas de altura igual */
-    gap: 1rem; /* Espacio entre las celdas */
-    justify-items: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-  }
-  
-  .product {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    border-radius: 1rem; /* Bordes redondeados */
-    overflow: hidden; /* Para ocultar el contenido que se desborda */
-    height: 22rem;
-    width: 20rem;
-  }
-  
-  @media (min-width: 640px) {
-    .products {
-      grid-template-columns: repeat(
-        2,
-        1fr
-      ); /* Dos columnas en pantallas medianas */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .products {
-      grid-template-columns: repeat(
-        3,
-        1fr
-      ); /* Tres columnas en pantallas grandes */
-    }
-  }
-  
-  .titulo-pro {
-    color: #333333;
-    margin-left: 2rem;
-  }
-  
-  /* Footer specific styles */
-  .footer-space {
-    background-color: #111111; /* Fondo gris claro en modo claro */
-    color: #ffffff; /* Texto gris en modo claro */
-    padding-top: 1.5rem; /* Espaciado superior */
-    padding-bottom: 1.5rem; /* Espaciado inferior */
-  }
+  box-sizing: border-box; /* Ajusta el modelo de caja para incluir borde */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina rellenos predeterminados */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Define la fuente principal */
+  line-height: 1.6; /* Establece la altura de línea para el cuerpo del texto */
+  background-color: #ffffff; /* Color de fondo para el cuerpo */
+  color: #333333; /* Color de texto predeterminado */
+}
+
+/* Estilos para el encabezado */
+.logo {
+  color: #333333; /* Color del texto del logotipo */
+  margin-left: 3rem; /* Margen izquierdo para el logotipo */
+  display: inline-block; /* Muestra el logotipo como bloque en línea */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+  color: #333333; /* Color del texto de los enlaces de navegación */
+  display: inline-block; /* Muestra los enlaces como bloques en línea */
+}
+
+.nav-link img {
+  width: 2rem; /* Ancho fijo para las imágenes dentro de los enlaces de navegación */
+  margin-left: 73rem; /* Margen izquierdo para las imágenes */
+  display: inline-block; /* Muestra las imágenes como bloques en línea */
+  cursor: pointer; /* Cambia el cursor al pasar por encima de las imágenes */
+}
+
+/* Estilos para los botones */
+.button {
+  display: inline-block; /* Muestra el botón como bloque en línea */
+  background-color: #333333; /* Color de fondo del botón */
+  color: #f3f4f6; /* Color del texto del botón */
+  width: 7rem; /* Ancho fijo del botón */
+  height: 3rem; /* Altura fija del botón */
+  text-align: center; /* Alineación del texto dentro del botón */
+  line-height: 3rem; /* Altura de línea dentro del botón */
+  border: none; /* Sin borde alrededor del botón */
+  border-radius: 0.5rem; /* Borde redondeado del botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+  font-size: 1rem; /* Tamaño de fuente del botón */
+}
+
+/* Estilos de utilidad */
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin-left: auto; /* Margen izquierdo automático */
+  margin-right: auto; /* Margen derecho automático */
+}
+
+.flex {
+  display: flex; /* Muestra el contenedor como flexbox */
+}
+
+.flex-col {
+  flex-direction: column; /* Dirección de columna para flexbox */
+}
+
+.items-center {
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.justify-center {
+  justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.min-h-screen {
+  min-height: 100vh; /* Altura mínima de pantalla */
+}
+
+.py-12 {
+  padding-top: 3rem; /* Relleno superior */
+  padding-bottom: 3rem; /* Relleno inferior */
+}
+
+/* Estilos para diferentes tamaños de pantalla (mediante prefijos de clase) */
+.md\:py-24 {
+  padding-top: 6rem; /* Relleno superior grande en pantallas medianas */
+  padding-bottom: 6rem; /* Relleno inferior grande en pantallas medianas */
+}
+
+/* Fondos y colores de texto */
+.bg-gray-100 {
+  background-color: #f3f4f6; /* Fondo gris claro */
+}
+
+.dark\:bg-gray-950 {
+  background-color: whitesmoke; /* Fondo blanco ahumado en modo oscuro */
+}
+
+/* Tamaños de texto y estilos de fuente */
+.text-3xl {
+  font-size: 1.875rem; /* Tamaño grande de texto */
+  line-height: 2.25rem; /* Altura de línea del texto grande */
+}
+
+.font-bold {
+  font-weight: 700; /* Fuente en negrita */
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em; /* Espaciado de letras ajustado */
+}
+
+.sm\:text-4xl {
+  font-size: 2.25rem; /* Tamaño muy grande de texto en pantallas pequeñas */
+  line-height: 2.5rem; /* Altura de línea de texto muy grande en pantallas pequeñas */
+}
+
+.md\:text-5xl {
+  font-size: 3rem; /* Tamaño extra grande de texto en pantallas medianas */
+  line-height: 1; /* Línea ajustada de texto extra grande en pantallas medianas */
+}
+
+/* Colores de texto */
+.text-gray-500 {
+  color: #6b7280; /* Color de texto gris */
+}
+
+.dark\:text-gray-400 {
+  color: #9ca3af; /* Color de texto gris más oscuro en modo oscuro */
+}
+
+/* Tamaños de texto y alturas de línea */
+.text-lg {
+  font-size: 1.125rem; /* Tamaño grande de texto */
+  line-height: 1.75rem; /* Altura de línea de texto grande */
+}
+
+/* Margen automático */
+.mx-auto {
+  margin-left: auto; /* Margen izquierdo automático */
+  margin-right: auto; /* Margen derecho automático */
+}
+
+/* Relleno horizontal */
+.px-4 {
+  padding-left: 1rem; /* Relleno izquierdo */
+  padding-right: 1rem; /* Relleno derecho */
+}
+
+.md\:px-6 {
+  padding-left: 1.5rem; /* Relleno izquierdo grande en pantallas medianas */
+  padding-right: 1.5rem; /* Relleno derecho grande en pantallas medianas */
+}
+
+/* Diseño de cuadrícula */
+.grid {
+  display: grid; /* Muestra el contenedor como una cuadrícula */
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(
+    1,
+    minmax(0, 1fr)
+  ); /* Columnas de igual ancho en la cuadrícula */
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(
+    2,
+    minmax(0, 1fr)
+  ); /* Dos columnas de igual ancho en pantallas medianas */
+}
+
+/* Espacio entre elementos */
+.gap-8 {
+  gap: 2rem; /* Espacio grande entre elementos */
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem; /* Margen superior entre elementos */
+}
+
+/* Tamaño y línea de texto base */
+.text-base {
+  font-size: 1rem; /* Tamaño base de texto */
+  line-height: 1.5rem; /* Altura de línea de texto base */
+}
+
+/* Ancho completo */
+.w-full {
+  width: 100%; /* Ancho completo del elemento */
+}
+
+/* Altura fija */
+.h-64 {
+  height: 16rem; /* Altura fija del elemento */
+}
+
+/* Ajuste de imagen */
+.object-cover {
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+/* Bordes redondeados */
+.rounded-lg {
+  border-radius: 0.5rem; /* Bordes redondeados grandes */
+}
+
+/* Sombra */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra grande */
+}
+
+/* Ocultar desbordamiento */
+.overflow-hidden {
+  overflow: hidden; /* Oculta el contenido que desborda */
+}
+
+/* Relleno */
+.p-4 {
+  padding: 1rem; /* Relleno grande */
+}
+
+/* Tamaño y línea de texto extra grande */
+.text-xl {
+  font-size: 1.25rem; /* Tamaño extra grande de texto */
+  line-height: 1.75rem; /* Altura de línea de texto extra grande */
+}
+
+/* Peso de fuente semi-negrita */
+.font-semibold {
+  font-weight: 600; /* Fuente semi-negrita */
+}
+
+/* Colores de texto */
+.text-gray-500 {
+  color: #6b7280; /* Color de texto gris */
+}
+
+.dark\:text-gray-400 {
+  color: #9ca3af; /* Color de texto gris más oscuro en modo oscuro */
+}
+
+/* Tamaño y línea de texto pequeño */
+.text-sm {
+  font-size: 0.875rem; /* Tamaño pequeño de texto */
+  line-height: 1.25rem; /* Altura de línea de texto pequeño */
+}
+
+/* Diseño de espacio para productos */
+.products-space {
+  display: grid; /* Muestra el contenedor como una cuadrícula */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Tres columnas de igual ancho en la cuadrícula */
+  grid-template-rows: repeat(
+    2,
+    1fr
+  ); /* Dos filas de igual altura en la cuadrícula */
+  gap: 1rem; /* Espacio entre las celdas de la cuadrícula */
+  justify-items: center; /* Centrado horizontal de los elementos de la cuadrícula */
+  align-items: center; /* Centrado vertical de los elementos de la cuadrícula */
+}
+
+/* Estilo de tarjeta de producto */
+.product {
+  margin-top: 3rem; /* Margen superior de la tarjeta de producto */
+  margin-bottom: 2rem; /* Margen inferior de la tarjeta de producto */
+  background-color: #fff; /* Fondo blanco de la tarjeta de producto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave de la tarjeta de producto */
+  border-radius: 1rem; /* Bordes redondeados de la tarjeta de producto */
+  overflow: hidden; /* Oculta el contenido que desborda de la tarjeta de producto */
+  height: 22rem; /* Altura fija de la tarjeta de producto */
+  width: 20rem; /* Ancho fijo de la tarjeta de producto */
+}
+
+/* Título del producto */
+.titulo-pro {
+  color: #333333; /* Color de texto para el título del producto */
+  margin-left: 2rem; /* Margen izquierdo para el título del producto */
+}
+
+/* Estilos específicos para el pie de página */
+.footer-space {
+  background-color: #111111; /* Fondo gris oscuro para el pie de página */
+  color: #ffffff; /* Color de texto blanco para el pie de página */
+  padding-top: 1.5rem; /* Relleno superior del pie de página */
+  padding-bottom: 1.5rem; /* Relleno inferior del pie de página */
+}
