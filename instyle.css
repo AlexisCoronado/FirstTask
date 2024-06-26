@@ -8,13 +8,13 @@
 body {
   font-family: Arial, sans-serif; /* Define la fuente principal */
   line-height: 1.6; /* Establece la altura de línea para el cuerpo del texto */
-  background-color: #ffffff; /* Color de fondo para el cuerpo */
+  background-color: #c8cbc2; /* Color de fondo para el cuerpo */
   color: #333333; /* Color de texto predeterminado */
 }
 
 /* Estilos para el encabezado */
 .logo {
-  color: #333333; /* Color del texto del logotipo */
+  color: #384d3c; /* Color del texto del logotipo */
   margin-left: 3rem; /* Margen izquierdo para el logotipo */
   display: inline-block; /* Muestra el logotipo como bloque en línea */
 }
@@ -35,7 +35,7 @@ body {
 /* Estilos para los botones */
 .button {
   display: inline-block; /* Muestra el botón como bloque en línea */
-  background-color: #333333; /* Color de fondo del botón */
+  background-color: #132e37; /* Color de fondo del botón */
   color: #f3f4f6; /* Color del texto del botón */
   width: 7rem; /* Ancho fijo del botón */
   height: 3rem; /* Altura fija del botón */
@@ -98,6 +98,7 @@ body {
 .text-3xl {
   font-size: 1.875rem; /* Tamaño grande de texto */
   line-height: 2.25rem; /* Altura de línea del texto grande */
+  color: #384d3c
 }
 
 .font-bold {
@@ -131,6 +132,7 @@ body {
 .text-lg {
   font-size: 1.125rem; /* Tamaño grande de texto */
   line-height: 1.75rem; /* Altura de línea de texto grande */
+  color: #384d3c
 }
 
 /* Margen automático */
@@ -233,7 +235,7 @@ body {
 
 /* Colores de texto */
 .text-gray-500 {
-  color: #6b7280; /* Color de texto gris */
+  color:	#000000; /* Color de texto gris */
 }
 
 .dark\:text-gray-400 {
@@ -276,13 +278,13 @@ body {
 
 /* Título del producto */
 .titulo-pro {
-  color: #333333; /* Color de texto para el título del producto */
+  color: #384d3c; /* Color de texto para el título del producto */
   margin-left: 2rem; /* Margen izquierdo para el título del producto */
 }
 
 /* Estilos específicos para el pie de página */
 .footer-space {
-  background-color: #111111; /* Fondo gris oscuro para el pie de página */
+  background-color: #132e37; /* Fondo gris oscuro para el pie de página */
   color: #ffffff; /* Color de texto blanco para el pie de página */
   padding-top: 1.5rem; /* Relleno superior del pie de página */
   padding-bottom: 1.5rem; /* Relleno inferior del pie de página */
