@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif; /* Font style for the page */
     background-color: #ffffff; /* Background color of the page */
-    color: #000000; /* Text color */
+    color: rgba(200,203,194,255); /* Text color (gray) */
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -11,9 +11,9 @@ body {
 
 /* Container for the sign-up form */
 .signup-container {
-    background-color: #ffffff; /* Background color of the container */
+    background-color: rgba(19,46,55,255); /* Background color of the container (dark blue)*/
     padding: 20px; /* Padding inside the container */
-    border: 1px solid #000000; /* Black border around the container */
+    border: 1px solid rgba(19,46,55,255); /* Border around the container (same color of the background)*/
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
     width: 300px; /* Fixed width of the container */
@@ -24,11 +24,13 @@ body {
 .signup-container h2 {
     margin-bottom: 20px; /* Space below the heading */
     font-weight: normal; /* Normal font weight */
+    color: #ffffff;
 }
 
 /* Styles for each input group (label and input) */
 .input-group {
     margin-bottom: 15px; /* Space below each input group */
+    margin-right: 15px; /* Space between the rigth margin of the container with the inputs*/
     text-align: left; /* Align text to the left */
 }
 
@@ -43,9 +45,9 @@ body {
 .input-group input {
     width: 100%; /* Full width of the container */
     padding: 10px; /* Padding inside the input fields */
-    border: 1px solid #000000; /* Black border around input fields */
+    border: 1px solid rgba(19,46,55,255); /*Border around input fields (same color of the background)*/
     border-radius: 4px; /* Rounded corners for input fields */
-    background-color: #ffffff; /* Background color of input fields */
+    background-color: rgba(200,203,194,255); /* Background color of input fields */
     color: #000000; /* Text color of input fields */
 }
 
@@ -53,15 +55,16 @@ body {
 button {
     width: 100%; /* Full width of the container */
     padding: 10px; /* Padding inside the button */
-    background-color: #000000; /* Black background color for the button */
+    background-color: rgba(200,203,194,255); /* Gray background color for the button */
     border: none; /* Remove border */
     border-radius: 4px; /* Rounded corners for the button */
-    color: #ffffff; /* White text color */
+    color: rgba(19,46,55,255); /* blue text button color  */
     font-size: 16px; /* Font size for the button text */
     cursor: pointer; /* Pointer cursor on hover */
 }
 
 /* Hover effect for the submit button */
 button:hover {
-    background-color: #333333; /* Darker background color on hover */
+    background-color: rgba(56,77,60,255); /* Darker background color on hover */
+    color: #ffffff; /*text color change to white*/
 }
