@@ -1,7 +1,9 @@
 /* Controla el estilo del cuerpo de la página */
 body {
-    font-family: 'Arial', sans-serif; /* Fuente para el texto del cuerpo */
-    background-color: #fff; /* Color de fondo blanco */
+    font-family: 'Roboto Condensed', sans-serif; /* Fuente para el texto del cuerpo */
+    background-image: url('https://i.pinimg.com/564x/2d/ea/74/2dea74d05cc7e2b75de2c1bcce9599c0.jpg');  
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Para evitar que se repita la imagen */
     color: #333; /* Color del texto principal (gris oscuro) */
     display: flex; /* Utiliza el modelo de caja flexible para el diseño */
     justify-content: center; /* Centra el contenido horizontalmente */
@@ -9,7 +11,6 @@ body {
     height: 100vh; /* Altura del cuerpo de la página igual a la ventana gráfica */
     margin: 0; /* Elimina el margen predeterminado */
 }
-
 /* Contenedor de login con fondo negro */
 .login-container {
     background-color: #000; /* Color de fondo negro */
